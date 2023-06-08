@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/7e9f186741.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./dist/css/style.css" />
+    <title>SCSS</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="container">
+          <a
+            class="navbar__brand"
+            style="color: rgb(255, 205, 1)"
+            ;=""
+            onmouseenter="changeColorGreyBrand(this)"
+            onmouseleave="changeColorYellowBrand(this)"
+            href="#"
+            >Start SCSS</a
+          >
+          <button class="navbar__toggler">
+            Menü
+            <span class="navbar__toggler__icon"></span>
+          </button>
+          <div class="navbar__collapse">
+            <ul class="navbar-nav">
+              <li class="navbar__item">
+                <a
+                  class="navbar__link"
+                  onmouseenter="changeColorWhite(this)"
+                  onmouseleave="changeColorGrey(this)"
+                  href="#apps"
+                  style="color: rgb(166, 166, 166)"
+                  >DOWNLOAD</a
+                >
+              </li>
+              <li class="navbar__item">
+                <a
+                  class="navbar__link text-uppercase"
+                  onmouseenter="changeColorWhite(this)"
+                  onmouseleave="changeColorGrey(this)"
+                  href="#features"
+                  style="color: rgb(166, 166, 166)"
+                  >FEATURES</a
+                >
+              </li>
+              <li class="navbar__item">
+                <a
+                  class="navbar__link text-uppercase"
+                  onmouseenter="changeColorWhite(this)"
+                  onmouseleave="changeColorGrey(this)"
+                  href="#contact"
+                  style="color: rgb(166, 166, 166)"
+                  >CONTACT</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row">
+          <div class="newAge__container">
+            <div class="newAge__row">
+              <h1 class="newAge__h1">
+                New Age is an app landing page that will help you beatifully
+                showcase your new mobile app, or anything else!
+              </h1>
+              <button class="newAge__btn">Start now free!</button>
+            </div>
+          </div>
+          <div class="mobile__container">
+            <div class="mobile__phone">
+              <div class="mobile__screen"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <!-- APPS -->
+      <section class="discover" id="apps">
+        <h1 class="discover__header">Discover what all the buzz is about!</h1>
+        <div class="discover__container">
+          <p class="discover__paragraph">
+            Our app is avilable on any mobile device! Download noew to get
+            started!
+          </p>
+          <div class="apps__container">
+            <div class="apps__row">
+              <a
+                class="apps__google"
+                href="https://play.google.com/store/games"
+                target="_blank"
+              >
+                <img
+                  class="apps__google__img"
+                  src="./assets/img/google-play-badge.svg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="https://www.apple.com/hu/app-store/"
+                target="_blank"
+                class="apps__appStore"
+              >
+                <img
+                  class="apps__appStore__img"
+                  src="./assets/img/app-store-badge.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FEATURES -->
+      <section class="features" id="features">
+        <h1 class="features__header">Unlimited Features, Unlimited Fun</h1>
+        <h3 class="features__check__h3">
+          Check out what you can do with this app theme!
+        </h3>
+        <hr class="features__designedRow" />
+        <div class="features__container">
+          <div class="features__row">
+            <div class="mobile__container mobile__container__features">
+              <div class="mobile__phone">
+                <div class="mobile__screen"></div>
+              </div>
+            </div>
+            <div class="icons__row">
+              <div class="icons__deviceMocokups">
+                <i
+                  class="icons__deviceMocokups__mobile fa-solid fa-mobile-screen-button fa-3x featuresIcons"
+                ></i>
+                <h4 class="icons__deviceMocokups__h4">Device Mocokups</h4>
+                <p class="icons__deviceMocokups__paragraph">
+                  Ready to use HTML/CSS device mockups, no Photoshop required
+                </p>
+              </div>
+              <div class="icons__flexibleUse">
+                <i
+                  class="icons__flexibleUse__camera fa-solid fa-camera fa-3x featuresIcons"
+                ></i>
+                <h4 class="icons__flexibleUse__h4">Flexible Use</h4>
+                <p class="icons__flexibleUse__paragraph">
+                  Put an image, video, animation, or anything else in the
+                  screen!
+                </p>
+              </div>
+              <div class="icons__freeToUse">
+                <i
+                  class="icons__freeToUse__gift fa-solid fa-gift fa-3x featuresIcons"
+                ></i>
+                <h4 class="icons__freeToUse__h4">Free to Use</h4>
+                <p class="icons__freeToUse__paragraph">
+                  As always, this theme is free to download and use for and
+                  purpose!
+                </p>
+              </div>
+              <div class="icons__openSource">
+                <i
+                  class="icons__openSource__unlock fa-solid fa-unlock fa-3x featuresIcons"
+                ></i>
+                <h4 class="icons__openSource__h4">Open Source</h4>
+                <p class="icons__openSource__paragraph">
+                  Since this theme is MIT licensed, you can use it commerically!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- STOP WAITING -->
+      <section class="stopWaiting__container">
+        <h2 class="stopWaiting__h2__first">Stop waiting.</h2>
+        <h2 class="stopWaiting__h2__second">Start building.</h2>
+        <button class="stopWaiting__btn">Let's get started!</button>
+      </section>
+      <!-- SOCIAL -->
+      <section class="social__container" id="contact">
+        <h1 class="social__h1">
+          We <i class="social__h1__heart fa-solid fa-heart"></i> new friends!
+        </h1>
+        <div class="social__pages__container">
+          <a
+            href="https://twitter.com/home"
+            target="_blank"
+            data-toggle="tooltip"
+            data-placement="top"
+            title=""
+            data-original-title="Twitter"
+          >
+            <img
+              class="soical__pages__twitter brands bands-twitter"
+              src="./assets/pluszSvg/cdnlogo.com_twitter-icon.svg"
+              alt=""
+              height="100"
+            />
+          </a>
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            data-toggle="tooltip"
+            data-placement="top"
+            title=""
+            data-original-title="Facebook"
+          >
+            <img
+              class="brands soical__pages__facebook bands-facebook mx-3"
+              src="./assets/pluszSvg/cdnlogo.com_facebook.svg"
+              alt=""
+              height="100"
+            />
+          </a>
+          <a
+            href="https://www.google.com/"
+            target="_blank"
+            data-toggle="tooltip"
+            data-placement="top"
+            title=""
+            id="social"
+            data-original-title="Google +"
+          >
+            <img
+              class="brands soical__pages__google bands-google rounded-circle"
+              src="./assets/pluszSvg/cdnlogo.com_google-plus.svg"
+              alt=""
+              height="100"
+            />
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="privacy__container">
+        <p class="privacy__paragraph">
+          © Your Website 2018. All Rights Reserved.
+        </p>
+        <div class="privacy__links__container">
+          <a
+            class="privacy__links__privacy privacy__links btn btn__modal"
+            data-toggle="modal"
+            data-target="#privacyModal"
+            >Privacy</a
+          >
+          <a
+            class="privacy__links__terms privacy__links btn btn__modal"
+            data-toggle="modal"
+            data-target="#termsModal"
+            >Terms</a
+          >
+          <a
+            class="privacy__links__terms__faq privacy__links btn btn__modal"
+            data-toggle="modal"
+            data-target="#faqModal"
+            >FAQ</a
+          >
+        </div>
+      </div>
+    </footer>
+    <div class="modal__background">
+      <div class="modal__window modal__window--container">
+        <p tabindex="0" class="modal__window__X">
+          <i class="fa-solid fa-x"></i>
+        </p>
+        <div class="modal__window__text">
+          <h2 class="modal__title">Lorem</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            placeat accusantium ad vero harum libero, eius expedita vel quidem
+            non quaerat illo ab architecto amet repudiandae nam corrupti nulla
+            eos.
+          </p>
+        </div>
+        <div class="modal__btn">
+          <button class="btn btn__success">Cancel</button>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/main.js"></script>
+  </body>
+</html>
